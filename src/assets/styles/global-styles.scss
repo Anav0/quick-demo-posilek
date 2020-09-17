@@ -3,23 +3,104 @@
 @tailwind components;
 @tailwind utilities;
 
+$light-gray: #e2e8f0;
+$redish: #ff4460;
 
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
-  html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-  }
+html {
+  box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+body {
+  margin: 0;
+  background-color: theme('colors.gray.500');
+}
+
+button {
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.bag {
+  filter: brightness(175%);
+}
+
+.abs-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -58%);
+}
+
+.divider {
+  height: 2px;
+  background-color: $light-gray;
+  width: 100vw;
+  position: absolute;
+  left: -50%;
+  bottom: 24.5%;
+  z-index: 1;
+}
+
+.svg-white {
+  fill: #ffffff;
+}
+
+.svg-gray {
+  fill: #a7a59f;
+}
+
+.glow {
+  box-shadow: 0 0 0px 5px $redish, 0.25rem 0.25rem 30px mix(black, $redish, 50%);
+}
+
+.glow:hover {
+  box-shadow: 0 0 0px 5px $redish, 0.5rem 0.5rem 35px mix(black, $redish, 50%);
+}
+
+.scale-anim {
+  transition: all 0.2s;
+}
+
+.scale-anim:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  max-width: 430px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  place-self: center;
+}
+.divider {
+  top: 25%;
+  z-index: 1;
+}

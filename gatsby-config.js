@@ -4,13 +4,21 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tailwind Starter`,
-    author: `Adam Romański`,
+    title: `Quick demo - Posilek`,
+    author: `Igor Motyka`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     `gatsby-plugin-stylelint`,
     {
       resolve: 'gatsby-plugin-layout',
