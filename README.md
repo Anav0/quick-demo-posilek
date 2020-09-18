@@ -1,4 +1,5 @@
-### Quick demo - Posilek
+### Quick demo - Posilek 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/85418fd1-b645-432d-b80b-e9791d2b3a08/deploy-status)](https://app.netlify.com/sites/elegant-bell-a3fc2f/deploys)
 
 ## UI created by [Netguru.com](www.netguru.com) team
 
