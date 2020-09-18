@@ -5,5 +5,4 @@
 https://dribbble.com/netguru/projects/2106363--PosilekDlaSeniora
 
 Shamelessly implemented by me in gatsby + tailwind.
-
-![How UI looks] (https://static.dribbble.com/users/366569/screenshots/11975795/media/2a7cb9edcbf7ba1dc3fe90f6ab96549b.png)
+![Image of Yaktocat](https://static.dribbble.com/users/366569/screenshots/11975795/media/f23f0f61c31ce7a9e80b2aa1476b50f1.png)
