@@ -100,7 +100,38 @@ button {
   grid-row: 2/3;
   place-self: center;
 }
+
 .divider {
   top: 25%;
   z-index: 1;
+}
+
+.upper-bubbles {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 105%;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.middle-bubbles {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: absolute;
+  width: 125%;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.lower-bubbles {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  width: 105%;
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
